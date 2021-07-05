@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended", "eslint-config-prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "drill4j"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "env": {
+    "browser": true,
+    "webextensions": true
+  },
+  "rules": {
+    "drill4j/license-header": ["error"],
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [2, { "devDependencies": ["**/spec.tsx", "**/spec.ts"] }],
+    "import/extensions": 0,
+    "@typescript-eslint/indent": [2, 2],
+    "no-console": 1,
+    "eofline": 0,
+    "arrow-parens": 0,
+    "ordered-imports": 0,
+    "object-literal-sort-keys": 0,
+    "no-empty": 2,
+    "no-unused-expression": 0,
+    "linebreak-style": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "max-len": ["error", { "code": 140 }],
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "no-unused-expressions": 0
+  }
+}

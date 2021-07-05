@@ -1,0 +1,9 @@
+.idea
+.cache
+*.log
+node_modules
+build
+.env
+build.zip
+*.crx
+*.pem
